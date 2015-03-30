@@ -1,0 +1,99 @@
+<apex:page sidebar="false" showChat="false" controller="homepageController">
+    <apex:stylesheet value="{!URLFOR($Resource.BootstrapCSS)}"/>
+    <apex:stylesheet value="http://fonts.googleapis.com/css?family=Roboto:700,400"/>
+    <style>
+    	body{
+        	font-size:1rem;
+        }
+        .bootstrap-taps{
+	        font-family: 'Roboto', Helvetica, sans-serif;
+        }
+    </style>
+    <div class="bootstrap-taps">
+    <div class="container-fluid" style="margin-bottom:2rem;">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            
+            
+            <div class="row">
+	            <img class="col-xs-12" style="padding:0" src="http://fpoimg.com/1000x200?text=Mil_Vet_Banner_Image"/>
+            </div> <!-- Banner -->
+            
+            
+            <div class="row clearfix" style="padding-bottom:30px;background-image:url('http://taps-wp-uploads.s3.amazonaws.com/wp-content/uploads/2015/03/bg-stars-narrow.jpg')">
+                <div class="col-sm-7">
+                    <div style="padding:10px;">
+                        <h3>Intro Text</h3>
+                        <p style="">
+                            Discussions are ongoing forums where various topics are discussed in an online platform.  These Discussion are available 24/7 to read or participate in. Registered users can access the discussions at any time. Users can also start a discussion about a particular topic relating to caregivers such as managing finances, understanding PTSD, support, children, and youth.
+                            <br/><br/>
+                            Discussions are moderated by caregiver peer moderators to ensure appropriateness and accuracy of content and facilitate a supportive climate for sharing.                        </p> 
+                        <h4>
+                            Getting Started
+                        </h4>
+                        <ul>
+                            <li><a href="/tapsvf/{!mvcntips.id}">#MVCNTips</a></li>
+                            <li><a href="/tapsvf/{!mvcninfogroup.id}">MVCN Info Group</a></li>
+                        </ul>
+                    </div>   
+                </div>
+                
+                <div class="col-sm-5">
+                    <div class="well well-sm" style="margin-top:1rem;background-color:white;">
+                        <div class="row" style="margin-left:5px;">
+                            <a><apex:image id="currentUserProfileImage" url="{!currentUserProfileImage}" style="height:40px;width:40px;" /></a>
+                            <a href="/tapsvf/{!currentUser.id}" style="font-size:1rem;">Your profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Intro Block -->
+            
+            <div style="position:relative;">
+                <h2 style="color:white;position:absolute;top:-30px;background-color:#B11216;padding:10px;margin:auto;display:inline-block;">
+                    Get Connected
+                </h2>
+            </div> <!-- Floating Header -->
+            
+            
+            <div class="row clearfix" style="background-color:#134080;color:white;padding-top:30px">
+                	<div class="col-sm-4">
+                        <h4>Popular Users</h4>
+                        <apex:repeat value="{!popularUsers}" var="popularUser">
+                            <div class="well well-sm" style="margin-top:1rem;">
+                                <div class="row" style="margin-left:5px;">
+                                    <a><img style="width:40px;height:40px;" src="{! popularUser.smallPhotoURL}"/></a>
+                                    <a href="/tapsvf/{!popularUser.id}" style="font-size:1rem;">{!popularUser.name}</a>
+                                </div>
+                            </div>
+                        </apex:repeat>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <h4>Active Groups</h4>
+                        <apex:repeat value="{!popularGroups}" var="group">
+                            <div class="well well-sm" style="margin-top:1rem;">
+                                <div class="row" style="margin-left:5px;">
+                                    <a><img style="width:40px;height:40px;" src="{! group.smallPhotoURL}"/></a>
+                                    <a href="/tapsvf/{!group.id}" style="font-size:1rem;">{!group.name}</a>
+                                </div>
+                            </div>
+                        </apex:repeat>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <h4>Active Topics</h4>
+                        <apex:repeat value="{!trendingTopics}" var="topic">
+                            <div class="well well-sm" style="margin-top:1rem;">
+                                <div class="row" style="margin-left:5px;">
+                                    <a><img style="width:40px;height:40px;" src="http://fpoimg.com/40x40"/></a>
+                                    <a href="/tapsvf/{!topic.id}" style="font-size:1rem;">{!topic.name}</a>
+                                </div>
+                            </div>
+                        </apex:repeat>
+                    </div>
+            </div> <!-- End Connect Block -->
+            
+            
+        </div>
+    </div>
+    </div>
+</apex:page>

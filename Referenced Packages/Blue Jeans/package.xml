@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blue Jeans</fullName>
+    <apiAccessLevel>Unrestricted</apiAccessLevel>
+    <description>Multi-Party Video Conferencing</description>
+    <namespacePrefix>bluejeans</namespacePrefix>
+    <types>
+        <members>BlueJeansLicenseManager</members>
+        <members>BlueJeansLicenseManagerTest</members>
+        <members>BlueJeansPackageLicenseManager</members>
+        <members>BlueJeansPackageLicenseManagerTest</members>
+        <members>BlueJeansTrialManager</members>
+        <members>BlueJeansTrialManagerTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Blue_Jeans</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>blue_jeans_group_oauth_secret__c.blue_jeans_group_oauth_secret__c</members>
+        <members>blue_jeans_personal_meeting_id__c.Blue_Jeans_Personal_Meeting_ID__c</members>
+        <members>blue_jeans_secret__c.Blue_Jeans_Secret__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>blue_jeans_group_oauth_secret__c</members>
+        <members>blue_jeans_personal_meeting_id__c</members>
+        <members>blue_jeans_secret__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Blue_Jeans</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>bluejeans_appicon_120x120</members>
+        <members>bluejeans_appicon_16x16</members>
+        <name>StaticResource</name>
+    </types>
+    <version>31.0</version>
+</Package>

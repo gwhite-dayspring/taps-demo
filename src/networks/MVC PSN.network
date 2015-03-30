@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network xmlns="http://soap.sforce.com/2006/04/metadata">
+    <allowMembersToFlag>true</allowMembersToFlag>
+    <branding>
+        <loginFooterText>Mil/Vet Caregiver Network</loginFooterText>
+        <loginLogo>Communities_Shared_Document_Folder/logo_mvcpsn_125x125_png.png</loginLogo>
+        <pageFooter>SharedDocuments/Community_Footer.html</pageFooter>
+        <pageHeader>Communities_Shared_Document_Folder/Community_Header.html</pageHeader>
+        <primaryColor>#B11216</primaryColor>
+        <primaryComplementColor>#FFFFFF</primaryComplementColor>
+        <quaternaryColor>#FFFFFF</quaternaryColor>
+        <quaternaryComplementColor>#222222</quaternaryComplementColor>
+        <secondaryColor>#333333</secondaryColor>
+        <tertiaryColor>#F2F2F2</tertiaryColor>
+        <tertiaryComplementColor>#222222</tertiaryComplementColor>
+        <zeronaryColor>#134080</zeronaryColor>
+        <zeronaryComplementColor>#FFFFFF</zeronaryComplementColor>
+    </branding>
+    <changePasswordTemplate>unfiled$public/CommunityChangePasswordEmailTemplate</changePasswordTemplate>
+    <emailSenderAddress>jgreenhill@dayspring-tech.com</emailSenderAddress>
+    <emailSenderName>Tragedy Assistance Programs for Survivors</emailSenderName>
+    <enableGuestChatter>false</enableGuestChatter>
+    <enableInvitation>false</enableInvitation>
+    <enableKnowledgeable>false</enableKnowledgeable>
+    <enableNicknameDisplay>true</enableNicknameDisplay>
+    <enablePrivateMessages>true</enablePrivateMessages>
+    <enableReputation>false</enableReputation>
+    <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
+    <logoutUrl>https://52demo.force.com/tapsvf/login</logoutUrl>
+    <networkMemberGroups>
+        <profile>Admin</profile>
+        <profile>Customer Community User</profile>
+        <profile>Customer Community Login User</profile>
+    </networkMemberGroups>
+    <picassoSite>MVC_PSN1</picassoSite>
+    <selfRegProfile>customer community user</selfRegProfile>
+    <selfRegistration>true</selfRegistration>
+    <sendWelcomeEmail>true</sendWelcomeEmail>
+    <site>MVC_PSN</site>
+    <status>Live</status>
+    <tabs>
+        <customTab>Homepage</customTab>
+        <defaultTab>01rj0000000kbUD</defaultTab>
+        <standardTab>Chatter</standardTab>
+        <standardTab>CollaborationGroup</standardTab>
+        <standardTab>UserProfile</standardTab>
+    </tabs>
+    <urlPathPrefix>tapsvf</urlPathPrefix>
+    <welcomeTemplate>unfiled$public/CommunityWelcomeEmailTemplate</welcomeTemplate>
+</Network>
